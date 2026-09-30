@@ -7,8 +7,14 @@ pipeline {
             }
         }
     }
-    post {
-        success { echo 'Website deployed successfully' }
-        failure { echo 'Deployment failed' }
+ post {
+        success {
+            echo 'Pipeline finished successfully.'
+        }
+        failure {
+            echo 'Pipeline failed. Check the console output.'
+        }
+        always {
+            echo 'Done'
+        }
     }
-}
