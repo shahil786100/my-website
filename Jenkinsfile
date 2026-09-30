@@ -7,7 +7,7 @@ pipeline {
             }
         }
     }
- post {
+    post {
         success {
             echo 'Pipeline finished successfully.'
         }
@@ -18,3 +18,4 @@ pipeline {
             echo 'Done'
         }
     }
+}
